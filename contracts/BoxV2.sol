@@ -3,7 +3,7 @@
 // SPDX-License-Identifier: SEE LICENSE IN LICENSE
 pragma solidity ^0.8.7;
 
-contract Box {
+contract BoxV2 {
     uint256 internal value;
 
     event ValueChanged(uint256 newValue);
@@ -18,7 +18,7 @@ contract Box {
     }
 
     function version() public pure returns (uint256) {
-        return 1;
+        return 2;
     }
 
     function increment() public {
